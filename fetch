@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "----- DOTFILE FETCH STARTING -----"
+
+cp -r ~/.config/nvim .
+
+echo "  -> All configs sync'd."
+
+echo "----- DOTFILE FETCH FINISHED -----"

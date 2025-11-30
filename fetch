@@ -2,8 +2,12 @@
 
 echo "----- DOTFILE FETCH STARTING -----"
 
+# Neovim
 cp -r ~/.config/nvim .
 rm -rf nvim/.git/
+
+# git config
+cp ~/.gitmessage .
 
 echo "  -> All configs sync'd."
 

@@ -3,6 +3,7 @@
 echo "----- DOTFILE FETCH STARTING -----"
 
 cp -r ~/.config/nvim .
+rm -rf nvim/.git/
 
 echo "  -> All configs sync'd."
 

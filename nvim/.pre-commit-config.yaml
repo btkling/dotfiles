@@ -1,0 +1,11 @@
+# pasted from https://pre-commit.com/#2-add-a-pre-commit-configuration
+# it's usually a good idea to run the hooks against all of the files when
+# adding new hooks (usually pre-commit will only run on the changed files
+# during git hooks)
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace

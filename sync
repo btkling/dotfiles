@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+echo "----- DOTFILE SYNC STARTING -----"
+git pull
+
+# copy
+cp -r nvim ~/.config/nvim
+
+echo "  -> All configs copied."
+
+echo "----- DOTFILE SYNC FINISHED -----"

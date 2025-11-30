@@ -6,7 +6,7 @@ echo "----- DOTFILE SYNC STARTING -----"
 git pull
 
 # copy
-cp -r nvim ~/.config/nvim
+cp -r nvim ~/.config/
 
 echo "  -> All configs copied."
 

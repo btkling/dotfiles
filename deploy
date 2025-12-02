@@ -6,7 +6,6 @@ echo "----- DOTFILE DEPLOY STARTING -----"
 git pull
 
 cp -r nvim ~/.config/
-cp -r waybar ~/.config/
 
 echo "  -> All configs copied."
 

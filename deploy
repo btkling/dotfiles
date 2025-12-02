@@ -2,12 +2,12 @@
 
 
 
-echo "----- DOTFILE SYNC STARTING -----"
+echo "----- DOTFILE DEPLOY STARTING -----"
 git pull
 
-# copy
 cp -r nvim ~/.config/
+cp -r waybar ~/.config/
 
 echo "  -> All configs copied."
 
-echo "----- DOTFILE SYNC FINISHED -----"
+echo "----- DOTFILE DEPLOY FINISHED -----"

@@ -3,8 +3,14 @@
 echo "----- DOTFILE FETCH STARTING -----"
 
 # Neovim
-cp -r ~/.config/nvim .
+cp -rv ~/.config/nvim .
 rm -rf nvim/.git/
+
+# zsh
+cp -v ~/.zshrc zsh/
+
+# tmux
+cp -rv ~/.config/tmux .
 
 # git config
 cp ~/.gitmessage .

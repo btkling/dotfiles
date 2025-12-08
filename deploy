@@ -5,7 +5,9 @@
 echo "----- DOTFILE DEPLOY STARTING -----"
 git pull
 
-cp -r nvim ~/.config/
+cp -rv nvim ~/.config/
+cp -v zsh/.zshrc ~
+cp -rv tmux/tmux.conf ~/.config/
 
 echo "  -> All configs copied."
 

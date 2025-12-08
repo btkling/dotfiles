@@ -21,6 +21,19 @@ git_prompt_info() {
 }
 
 
+collapsed_dir() {
+    local dir="${PWD/#$HOME/~}"
+    local parts=("${(@s:/:)dir}")
+    local count=${#parts[@]}
+
+    if [[ $count -le 2 ]]; then
+        echo "$dir"
+    else
+        echo "${parts[1]}/../${parts[-1]}"
+    fi
+}
+
+
 # ------------------------------------------------
 # prompt
 # ------------------------------------------------
@@ -31,6 +44,6 @@ PROMPT="%B%K{${color1}}%D{%H:%M} %k"               # current time HH:MM
 PROMPT+="%F{${color1}}%K{${color2}}${arrow}%f"
 PROMPT+=' %n %k'                                   # current user
 PROMPT+="%F{${color2}}%K{${color3}}${arrow}%f"
-PROMPT+=' %~ %k'                                   # current directory
+PROMPT+=" \$(collapsed_dir) %k"                                   # current directory
 PROMPT+="\$(git_prompt_info)"                      # git branch with arrows (if in repo)
 PROMPT+='%b %# '

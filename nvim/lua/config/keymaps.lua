@@ -8,6 +8,10 @@ local fzf = _G.FzfLua
 -- Clear highlights on search
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-- ctrl backspace and delete work as expected?
+map("i", "<C-h>", "<C-w>", { noremap = true, silent = true, desc = "Delete previous word (Ctrl+Backspace)" })
+map("i", "<C-Del>", "<C-o>dw", { noremap = true, silent = true })
+
 --  Switch between windows
 map("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 map("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })

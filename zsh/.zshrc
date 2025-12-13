@@ -3,7 +3,7 @@
 # ------------------------------------------------
 alias l="eza"
 alias ll="eza -lh"
-alias la="eza -lh"
+alias la="eza -la"
 alias v="nvim"
 
 
